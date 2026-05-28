@@ -3,25 +3,25 @@ const { DataTypes } = require("sequelize");
 module.exports = (sequelize) => {
   sequelize.define("order", {
     id: {
-      type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4,
+      type: DataTypes.INTEGER,
       primaryKey: true,
+      autoIncrement: true,
     },
     tableNumber: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     ticketsApplied: {
       type: DataTypes.INTEGER,
       defaultValue: 0, // La cajera lo llena al final
     },
-    orderStatus: {
+    status: {
       type: DataTypes.ENUM(
         "abierto",
         "en cocina",
         "entregado",
         "pagado",
-        "cancelado",
+        "anulado",
       ),
       defaultValue: "abierto",
     },
@@ -38,7 +38,6 @@ module.exports = (sequelize) => {
       allowNull: true,
       validate: {
         esObligatorioSiHayAjuste(value) {
-          // Si el ajuste no es 0 y el motivo está vacío...
           if (
             parseFloat(this.manualAdjustment) !== 0 &&
             (!value || value.trim() === "")
@@ -52,7 +51,4 @@ module.exports = (sequelize) => {
     },
   });
 };
-
-// Order.belongsTo(User);
-// Product.belongsToMany(Side, { through: 'ProductSides' });
-// Side.belongsToMany(Product, { through: 'ProductSides' });
+F;

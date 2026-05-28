@@ -10,7 +10,6 @@ module.exports = (sequelize) => {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
     },
     basePrice: {
       type: DataTypes.DECIMAL(10, 2),
@@ -22,7 +21,7 @@ module.exports = (sequelize) => {
     },
     extraSidePrice: {
       type: DataTypes.DECIMAL(10, 2),
-      defaultValue: 2.0,
+      defaultValue: 2.00,
     },
     category: {
       type: DataTypes.ENUM("entradas", "truchas", "bebidas", "otros"),

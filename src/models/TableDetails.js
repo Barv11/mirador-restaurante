@@ -9,6 +9,7 @@ module.exports = (sequelize) => {
     },
     quantity: {
       type: DataTypes.INTEGER,
+      // allowNull: false,
       defaultValue: 1,
     },
     subtotal: {
