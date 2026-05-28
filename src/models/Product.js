@@ -1,4 +1,12 @@
+// TRUCHA FRITA
+// 35 SOLES
+// 3 GUARNICIONES GRATIS
+// PRECIO EXTRA POR GUARNICION 2 SOLES
+// ENTRADA
+// CANTIDAD DE TRUCHAS 1
+
 const { DataTypes } = require("sequelize");
+const { SHOWTABLES } = require("sequelize/lib/query-types")
 
 module.exports = (sequelize) => {
   sequelize.define("product", {

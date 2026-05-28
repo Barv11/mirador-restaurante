@@ -1,3 +1,12 @@
+// ORDER ES EL PEDIDO DE LA MESA
+// UN EJ SERIA
+// MESA 6
+// 5 TICKETS TIENEN
+// ESTADO DEL PEDIDO: EN COCINA
+// TOTAL DE LA CUENTA
+// AJUSTE MANUEL SI HUBO
+// Y LA RAZON
+
 const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {

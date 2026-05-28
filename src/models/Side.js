@@ -1,3 +1,10 @@
+// SIDE SON LAS GUARNICIONES
+// EJ 
+// ARROZ
+// PAPA
+// ENSALADA
+// PLATANO FRITO 
+
 const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {
