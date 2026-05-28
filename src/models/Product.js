@@ -5,6 +5,16 @@
 // ENTRADA
 // CANTIDAD DE TRUCHAS 1
 
+// "id": 10,
+//   "name": "Trucha Frita Especial",
+//   "basePrice": 35.00,
+//   "category": "plato_fondo",
+//   "freeSidesLimit": 2,
+//   "extraSidePrice": 3.00,
+//   "ingredientQuantity": 1,
+//   "isActive": true
+// }
+
 const { DataTypes } = require("sequelize");
 const { SHOWTABLES } = require("sequelize/lib/query-types")
 

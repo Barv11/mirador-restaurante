@@ -8,6 +8,16 @@
 // 5 X 14 SUBTOTAL
 // COMENTARIO POR SI QUIEREN LA TRUCHA MAS DORADA 
 
+// {
+//   "id": 500,
+//   "orderId": 45,       // Vinculado a la orden de la Mesa 4
+//   "productId": 10,     // Vinculado a la "Trucha Frita Especial"
+//   "quantity": 2,
+//   "subtotal": 70.00,
+//   "comment": "Una de las truchas que sea bien frita, por favor.",
+//   "selectedSides": [101] // Eligieron Yucas Doradas
+// }
+
 const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {

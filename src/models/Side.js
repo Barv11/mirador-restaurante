@@ -5,6 +5,12 @@
 // ENSALADA
 // PLATANO FRITO 
 
+// {
+//   "id": 101,
+//   "name": "Yucas Doradas",
+//   "isActive": true
+// }
+
 const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {

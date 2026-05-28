@@ -7,6 +7,17 @@
 // AJUSTE MANUEL SI HUBO
 // Y LA RAZON
 
+// {
+//   "id": 45,
+//   "tableNumber": 4,
+//   "status": "pagado",
+//   "userId": 1,              // Atendido por Juan Pérez (User 1)
+//   "ticketsApplied": 1,      // Entregó 1 ticket en caja (S/ 5.00 de descuento)
+//   "manualAdjustment": -2.00, // Se le rebajaron S/ 2.00 por cortesía
+//   "adjustmentReason": "Cliente frecuente, se redondeó la cuenta", // ¡Obligatorio!
+//   "totalPrice": 63.00       // (S/ 70.00 del plato - S/ 5.00 ticket - S/ 2.00 ajuste)
+// }
+
 const { DataTypes } = require("sequelize");
 
 module.exports = (sequelize) => {

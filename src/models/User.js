@@ -1,5 +1,13 @@
 // PERSONAL MESERO COCINERO CAJERO 
 
+// {
+//   "id": 1,
+//   "name": "Juan Pérez",
+//   "email": "juan.mesero@mirador.com",
+//   "role": "mesero",
+//   "isActive": true
+// }
+
 const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
