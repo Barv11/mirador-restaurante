@@ -1,4 +1,6 @@
 require("dotenv").config();
+require("./models/index.js");
+
 const { Sequelize } = require("sequelize");
 
 const { DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, PORT } = process.env;
@@ -11,10 +13,10 @@ const sequelize = new Sequelize(
   },
 );
 
-// En tu server.js o app.js donde sincronizas Sequelize:
 sequelize
-  .sync({ alter: true }) // 👈 Ajusta las tablas existentes con los nuevos campos y ENUMs
-  .then(() => console.log("Base de datos sincronizada con éxito. 🚀"));
+  .sync({ alter: true })
+  .then(() => console.log("Base de datos sincronizada con éxito. 🚀"))
+  .catch((err) => console.error("Error al sincronizar:", err));
 
 module.exports = {
   ...sequelize.models,
