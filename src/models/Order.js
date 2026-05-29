@@ -38,7 +38,7 @@ module.exports = (sequelize) => {
     status: {
       type: DataTypes.ENUM(
         "abierto",
-        "en cocina",
+        "en_cocina",
         "entregado",
         "pagado",
         "anulado",
