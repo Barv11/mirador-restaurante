@@ -1,5 +1,4 @@
 require("dotenv").config();
-require("./models/index.js");
 
 const { Sequelize } = require("sequelize");
 
@@ -12,6 +11,8 @@ const sequelize = new Sequelize(
     native: false,
   },
 );
+
+require("./models/index.js");
 
 sequelize
   .sync({ alter: true })

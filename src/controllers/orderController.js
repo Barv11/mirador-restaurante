@@ -1,6 +1,6 @@
 const { conn } = require("../db");
-const { User, Order, TableDetails, Product, Side } = sequelize.models;
 const sequelize = conn;
+const { User, Order, TableDetails, Product, Side } = sequelize.models;
 
 // 🧮 FUNCIÓN 1: CERRAR Y COBRAR LA CUENTA (Para pagos normales o invitaciones en S/ 0.00)
 const cerrarYCalcularCuenta = async (req, res) => {
