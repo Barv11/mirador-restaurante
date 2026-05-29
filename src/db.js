@@ -11,51 +11,12 @@ const sequelize = new Sequelize(
   },
 );
 
+// En tu server.js o app.js donde sincronizas Sequelize:
+sequelize
+  .sync({ alter: true }) // 👈 Ajusta las tablas existentes con los nuevos campos y ENUMs
+  .then(() => console.log("Base de datos sincronizada con éxito. 🚀"));
+
 module.exports = {
   ...sequelize.models,
   conn: sequelize,
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
